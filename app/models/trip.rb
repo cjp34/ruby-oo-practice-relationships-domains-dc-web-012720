@@ -1,7 +1,7 @@
 
 
 class Trip
-    attr_reader :guest, :listing
+    attr_reader :guest_name, :listing_name
     @@all = []
 
     def initialize(guest, listing)
@@ -25,3 +25,4 @@ class Trip
 
 
 end
+

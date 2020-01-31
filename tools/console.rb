@@ -4,9 +4,9 @@ def reload
   load 'config/environment.rb'
 end
 
-listing1 = Listing.new("DC")
-listing2 = Listing.new("NY")
-listing3 = Listing.new("VA")
+listing1 = Listing.new("Carl's Apartment", "DC")
+listing2 = Listing.new("Jason's Apartment", "NY")
+listing3 = Listing.new("Ann's Apartment", "VA")
 
 
 jason = Guest.new("Jason")
