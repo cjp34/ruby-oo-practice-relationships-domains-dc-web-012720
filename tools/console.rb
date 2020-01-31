@@ -4,7 +4,22 @@ def reload
   load 'config/environment.rb'
 end
 
-trip1 = Trip.new("Carl", "FlatIron")
+listing1 = Listing.new("DC")
+listing2 = Listing.new("NY")
+listing3 = Listing.new("VA")
 
-binding.pry
+
+jason = Guest.new("Jason")
+carl = Guest.new("Carl")
+ann = Guest.new("Ann")
+
+trip1 = Trip.new(jason, listing1)
+trip2 = Trip.new(jason, listing2)
+trip3 = Trip.new(carl, listing3)
+trip4 = Trip.new(ann, listing2)
+trip5 = Trip.new(carl, listing2)
+Pry.start
 0
+
+
+
