@@ -38,12 +38,12 @@ end
      end  
  end
 
-# def self.find_all_by_name(name)
-#     self.all select do |guest|
-#         binding.pry
+def self.find_all_by_name(name)
+		Guest.all.select do |guest|
+			guest.guest_name == name
     
-#     end    
-# end
+    end    
+end
 
 
 end
